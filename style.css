@@ -1,123 +1,136 @@
-/* ====== Global Styles ====== */
-body {
-  font-family: "Cairo", sans-serif;
+/* ===== Global Reset ===== */
+* {
   margin: 0;
   padding: 0;
-  background: #f9fafb;
-  color: #333;
+  box-sizing: border-box;
 }
 
-section.pricing {
-  padding: 60px 20px;
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8fafc;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* ===== Pricing Section ===== */
+.pricing {
+  padding: 80px 20px;
   text-align: center;
-  background: linear-gradient(135deg, #f0f4ff, #ffffff);
+  background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
 }
 
-/* ====== Section Title ====== */
 .pricing h2 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111827;
   margin-bottom: 15px;
-  color: #1a237e;
 }
 
 .pricing p {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 40px;
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-bottom: 50px;
 }
 
-/* ====== Pricing Cards Container ====== */
+/* ===== Cards Container ===== */
 .pricing-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
   max-width: 1100px;
   margin: 0 auto;
 }
 
-/* ====== Individual Card ====== */
+/* ===== Card ===== */
 .card {
   background: #fff;
-  border-radius: 16px;
-  padding: 30px 25px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
-  transition: all 0.3s ease;
-  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e5e7eb;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  border: 1px solid #3f51b5;
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
-/* ====== Card Header ====== */
+/* ===== Card Header ===== */
 .card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #0d47a1;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #111827;
 }
 
 .price {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #3f51b5;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #04205c;
+  margin-bottom: 25px;
 }
 
 .price span {
-  font-size: 0.9rem;
-  color: #888;
+  font-size: 1rem;
+  color: #6b7280;
+  font-weight: 400;
 }
 
-/* ====== Features List ====== */
+/* ===== Features ===== */
 .card ul {
   list-style: none;
-  padding: 0;
-  margin: 0 0 20px;
+  margin-bottom: 30px;
+  text-align: left;
 }
 
 .card ul li {
-  font-size: 0.95rem;
-  margin: 10px 0;
+  margin: 12px 0;
+  font-size: 1rem;
+  color: #374151;
   display: flex;
   align-items: center;
-  gap: 8px;
-  color: #444;
+  gap: 10px;
 }
 
 .card ul li::before {
   content: "✔";
-  color: #4caf50;
+  color: #10b981;
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
-/* ====== Button ====== */
+/* ===== Button ===== */
 .card button {
-  background: #3f51b5;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
   color: #fff;
   border: none;
-  padding: 12px 22px;
-  border-radius: 10px;
+  padding: 14px 28px;
+  border-radius: 12px;
   font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
+  width: 100%;
 }
 
 .card button:hover {
-  background: #303f9f;
+  background: linear-gradient(90deg, #1e40af, #2563eb);
 }
 
-/* ====== Featured Plan ====== */
+/* ===== Featured Card ===== */
 .card.featured {
-  background: linear-gradient(135deg, #3f51b5, #5c6bc0);
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
   color: #fff;
+  border: none;
+  box-shadow: 0 20px 50px rgba(37, 99, 235, 0.25);
 }
 
 .card.featured h3,
 .card.featured .price,
 .card.featured ul li {
   color: #fff;
-}s
+}
 
 .card.featured ul li::before {
   color: #fff;
@@ -125,9 +138,10 @@ section.pricing {
 
 .card.featured button {
   background: #fff;
-  color: #3f51b5;
+  color: #04205c;
 }
 
 .card.featured button:hover {
-  background: #e8eaf6;
+  background: #e0e7ff;
 }
+
