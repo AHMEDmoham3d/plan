@@ -150,3 +150,94 @@ body {
 .card.featured button:hover {
   background: #e0e7ff;
 }
+
+/* ====== Header ====== */
+.card h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.price {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 25px;
+}
+
+.price span {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+/* ====== Features ====== */
+.card ul {
+  list-style: none;
+  margin-bottom: 35px;
+  text-align: left;
+}
+
+.card ul li {
+  margin: 14px 0;
+  font-size: 1rem;
+  color: #334155;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card ul li::before {
+  content: "✓";
+  color: #22c55e;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* ====== Button ====== */
+.card button {
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  color: #fff;
+  border: none;
+  padding: 14px 0;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.card button:hover {
+  background: linear-gradient(90deg, #1e40af, #2563eb);
+}
+
+/* ====== Featured Plan ====== */
+.card.featured {
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  color: #fff;
+  border: none;
+  box-shadow: 0 25px 60px rgba(37, 99, 235, 0.35);
+}
+
+.card.featured h3,
+.card.featured .price,
+.card.featured ul li {
+  color: #fff;
+}
+
+.card.featured ul li::before {
+  color: #fff;
+}
+
+.card.featured button {
+  background: #fff;
+  color: #2563eb;
+}
+
+.card.featured button:hover {
+  background: #e0e7ff;
+}
+
+
