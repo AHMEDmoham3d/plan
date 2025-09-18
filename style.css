@@ -1,4 +1,4 @@
-/* ===== Global Reset ===== */
+/* ====== Global Reset ====== */
 * {
   margin: 0;
   padding: 0;
@@ -6,111 +6,117 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background: #f8fafc;
-  color: #1f2937;
-  line-height: 1.6;
+  font-family: "Inter", "Cairo", sans-serif;
+  background: #f9fafb;
+  color: #1e293b;
+  line-height: 1.7;
 }
 
-/* ===== Pricing Section ===== */
+/* ====== Pricing Section ====== */
 .pricing {
-  padding: 80px 20px;
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
   text-align: center;
-  background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
 }
 
 .pricing h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
-  color: #111827;
+  color: #0f172a;
   margin-bottom: 15px;
+  letter-spacing: -0.5px;
 }
 
 .pricing p {
-  font-size: 1.1rem;
-  color: #6b7280;
-  margin-bottom: 50px;
+  font-size: 1.15rem;
+  color: #64748b;
+  margin-bottom: 60px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* ===== Cards Container ===== */
+/* ====== Cards Container ====== */
 .pricing-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 35px;
-  max-width: 1100px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-/* ===== Card ===== */
+/* ====== Card ====== */
 .card {
-  background: #fff;
-  border-radius: 20px;
-  padding: 40px 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 45px 35px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.35s ease;
+  position: relative;
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  border-color: #2563eb;
 }
 
-/* ===== Card Header ===== */
+/* ====== Header ====== */
 .card h3 {
   font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 12px;
-  color: #111827;
+  color: #0f172a;
 }
 
 .price {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 700;
-  color: #04205c;
+  color: #2563eb;
   margin-bottom: 25px;
 }
 
 .price span {
-  font-size: 1rem;
-  color: #6b7280;
+  font-size: 0.95rem;
+  color: #94a3b8;
   font-weight: 400;
 }
 
-/* ===== Features ===== */
+/* ====== Features ====== */
 .card ul {
   list-style: none;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   text-align: left;
 }
 
 .card ul li {
-  margin: 12px 0;
+  margin: 14px 0;
   font-size: 1rem;
-  color: #374151;
+  color: #334155;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
 .card ul li::before {
-  content: "✔";
-  color: #10b981;
+  content: "✓";
+  color: #22c55e;
   font-weight: bold;
   font-size: 1.1rem;
 }
 
-/* ===== Button ===== */
+/* ====== Button ====== */
 .card button {
   background: linear-gradient(90deg, #2563eb, #3b82f6);
   color: #fff;
   border: none;
-  padding: 14px 28px;
+  padding: 14px 0;
   border-radius: 12px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background 0.3s ease;
   width: 100%;
 }
 
@@ -118,12 +124,12 @@ body {
   background: linear-gradient(90deg, #1e40af, #2563eb);
 }
 
-/* ===== Featured Card ===== */
+/* ====== Featured Plan ====== */
 .card.featured {
-  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
   color: #fff;
   border: none;
-  box-shadow: 0 20px 50px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 25px 60px rgba(37, 99, 235, 0.35);
 }
 
 .card.featured h3,
@@ -138,10 +144,11 @@ body {
 
 .card.featured button {
   background: #fff;
-  color: #04205c;
+  color: #2563eb;
 }
 
 .card.featured button:hover {
   background: #e0e7ff;
 }
+
 
